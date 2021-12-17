@@ -1,8 +1,13 @@
 import math
+import time
 
-s = "Nel mezzo del cammin di nostra vita"
-print(s)
-ss=s.replace("m", "l", -1)
-print(ss)
-ss = s.upper()
-print(ss)
+a = list(range(10000000))
+b = list(range(5000000))
+t1 = time.time()
+z = a+b
+t2 = time.time()
+y = a.extend(b)
+t3 = time.time()
+
+print(t2-t1)
+print(t3-t2)
